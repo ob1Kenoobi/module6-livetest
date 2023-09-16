@@ -49,7 +49,12 @@ class ShoppingList extends StatelessWidget {
           title: Text(items[index].name),
           trailing: Icon(Icons.arrow_forward_ios),
           onTap: () {
-            // Add your onTap logic here
+            ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Text("List Tile pressed"),
+                duration: Duration(seconds: 2), // Adjust the duration as needed
+              ),
+            );
           },
         );
       },
