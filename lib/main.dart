@@ -47,7 +47,7 @@ class ShoppingList extends StatelessWidget {
         return ListTile(
           leading: Icon(items[index].icon),
           title: Text(items[index].name),
-          trailing: Icon(Icons.arrow_forward_ios),
+          trailing: Icon(Icons.task_alt_sharp),
           onTap: () {
             ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
